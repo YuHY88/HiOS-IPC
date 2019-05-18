@@ -1,0 +1,13 @@
+! -*- arp -*-
+!
+! ARPd sample configuration file
+!
+!
+hostname arpd
+password zebra
+!enable password please-set-at-here
+!
+!router arp
+!  network 192.168.1.0/24 area 0
+!
+log stdout

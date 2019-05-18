@@ -1,0 +1,24 @@
+! -*- ntp -*-
+!
+! ntp sample configuration file
+!
+! $Id: ntp.conf.sample,v 1.1 2002/12/13 20:15:30 paul Exp $
+!
+!hostname ntp
+password zebra
+!
+! debug ntp events
+! debug ntp packet
+!
+! network 11.0.0.0/8
+! network eth0
+! route 10.0.0.0/8
+! distribute-list private-only in eth0
+!
+!access-list private-only permit 10.0.0.0/8
+!access-list private-only deny any
+! 
+!log file ntp.log
+!
+!log stdout
+

@@ -1,0 +1,18 @@
+! -*- AUTH -*-
+!
+! AUTH sample configuration file
+!
+! 
+!
+hostname auth
+password huahuan
+!
+! dot1x system-auth-control
+! radius-server key SOMEKEY
+! radius-server host HOST
+! interface eth1
+! dot1x port-control auto
+!
+!log file aaa.log
+!
+log stdout

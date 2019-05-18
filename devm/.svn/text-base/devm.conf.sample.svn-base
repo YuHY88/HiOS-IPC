@@ -1,0 +1,13 @@
+! -*- devm -*-
+!
+! DEVM sample configuration file
+!
+! $Id: devm.conf.sample,v 1.1 2002/12/13 20:15:30 paul Exp $
+!
+hostname devm
+password zebra
+!
+! debug rip events
+! debug rip packet
+!
+

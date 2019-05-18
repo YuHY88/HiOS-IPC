@@ -1,0 +1,13 @@
+!
+! Zebra configuration saved from vty
+!   1970/01/09 22:00:56
+!
+password zebra
+!
+line vty
+!
+log timestamp 
+no log terminal 
+log console upto critical 
+log file upto error 
+!

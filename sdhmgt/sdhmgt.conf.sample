@@ -1,0 +1,13 @@
+! -*- sdhmgt -*-
+!
+! sdhmgt sample configuration file
+!
+! $Id: sdhmgt.conf.sample,v 1.1 2018/1/18 20:15:30 paul Exp $
+!
+hostname sdhmgt
+password zebra
+!
+! 
+!log file sdhmgt.log
+!
+log stdout

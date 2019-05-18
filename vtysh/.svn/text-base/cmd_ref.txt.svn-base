@@ -1,0 +1,56 @@
+/**
+ * \mainpage HiOS Command Reference
+ * \section intro Introduction
+ *	   HiOS 平台命令行参考手册.
+ * \subsection cmd_format 命令格式
+ *     命令行格式说明.
+ *     格式              |说明
+ *     ------------------|-------------------------------
+ *        小写字符       |命令行关键字（命令中保持不变、必须照输的部分），采用粗体表示
+ *        大写字符       |命令行参数（命令中必须由实际值进行替代的部分）采用大写字符表示，采用斜体表示
+ *          \|           |分格符，多选一
+ *     { x \| y \| ... } |参数集合，表示从两个或多个选项中选取多个参数，最少选取一个，最多选取所有选项
+ *     [ x \| y \| ... ] |参数关键字组合，表示从两个或多个选项中选取一个
+ *        <x - y>        |表示取值范围为大于等于x且小于等于y
+ *          ()           |圆括号扩起来的部分表示这部分命令有几个用竖直线分隔开的可选项
+ * \subsection cmd_mode 命令模式
+ *     命令行模式说明.
+ *     模式        |模式描述      |模式标识
+ *     ------------|--------------|-----------------
+ *     Enable mode |特权模式      |Router#
+ *     Config mode |全局配置模式  |Router(config)#
+ *     
+ * \subsection comds 命令参考
+ *     - \subpage cmds_ref_aaa
+ *     - \subpage cmds_ref_alarm
+ *     - \subpage cmds_ref_arp
+ *     - \subpage cmds_ref_bgp
+ *     - \subpage cmds_ref_ces
+ *     - \subpage cmds_ref_clock
+ *     - \subpage cmds_ref_devm
+ *     - \subpage cmds_ref_dhcp
+ *     - \subpage cmds_ref_dhcpv6
+ *     - \subpage cmds_ref_filem
+ *     - \subpage cmds_ref_ftm
+ *     - \subpage cmds_ref_hal
+ *     - \subpage cmds_ref_ifm
+ *     - \subpage cmds_ref_ipmc
+ *     - \subpage cmds_ref_isis
+ *     - \subpage cmds_ref_l2
+ *     - \subpage cmds_ref_mpls
+ *     - \subpage cmds_ref_ndp
+ *     - \subpage cmds_ref_ntp
+ *     - \subpage cmds_ref_ospf
+ *     - \subpage cmds_ref_ospfv6
+ *     - \subpage cmds_ref_ping
+ *     - \subpage cmds_ref_qos
+ *     - \subpage cmds_ref_rip
+ *     - \subpage cmds_ref_ripng
+ *     - \subpage cmds_ref_route
+ *     - \subpage cmds_ref_snmp
+ *     - \subpage cmds_ref_synce
+ *     - \subpage cmds_ref_syslog
+ *     - \subpage cmds_ref_system
+ *     - \subpage cmds_ref_web
+ */
+ 

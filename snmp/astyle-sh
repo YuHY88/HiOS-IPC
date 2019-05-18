@@ -1,0 +1,59 @@
+#! /bin/bash
+
+DIR_MIBGROUP=mibgroup
+DIR_AGENT=agent
+DIR_INCLUDE=include
+DIR_SNMPLIB=snmplib
+
+FILE_LIST=" ${DIR_AGENT}/snmpd.h ${DIR_AGENT}/snmpd.c \
+			${DIR_AGENT}/snmp_cmd.c \
+			${DIR_AGENT}/system_group.h ${DIR_AGENT}/system_group.c \
+			${DIR_INCLUDE}/ipran_snmp_data_cache.h \
+			${DIR_INCLUDE}/snmp_index_operater.h \
+			${DIR_INCLUDE}/snmp_config_table.h \
+			${DIR_SNMPLIB}/ipran_snmp_data_cache.c \
+			${DIR_SNMPLIB}/snmp_index_operater.c \
+			${DIR_SNMPLIB}/snmp_config_table.c \
+			${DIR_MIBGROUP}/mib_aaa.h ${DIR_MIBGROUP}/mib_aaa.c \
+			${DIR_MIBGROUP}/mib_alarm.h ${DIR_MIBGROUP}/mib_alarm.c \
+			${DIR_MIBGROUP}/mib_cfm.h ${DIR_MIBGROUP}/mib_cfm.c \
+			${DIR_MIBGROUP}/mib_cliset.h ${DIR_MIBGROUP}/mib_cliset.c \
+			${DIR_MIBGROUP}/mib_ddm.h ${DIR_MIBGROUP}/mib_ddm.c \
+			${DIR_MIBGROUP}/mib_dhcp.h ${DIR_MIBGROUP}/mib_dhcp.c \
+			${DIR_MIBGROUP}/mib_filem.h ${DIR_MIBGROUP}/mib_filem.c \
+			${DIR_MIBGROUP}/mib_ifm.h ${DIR_MIBGROUP}/mib_ifm.c \
+			${DIR_MIBGROUP}/mib_l2func.h ${DIR_MIBGROUP}/mib_l2func.c \
+			${DIR_MIBGROUP}/mib_l3func.h ${DIR_MIBGROUP}/mib_l3func.c \
+			${DIR_MIBGROUP}/mib_lldp.h ${DIR_MIBGROUP}/mib_lldp.c \
+			${DIR_MIBGROUP}/mib_loopdetect.h ${DIR_MIBGROUP}/mib_loopdetect.c \
+			${DIR_MIBGROUP}/mib_mpls.h ${DIR_MIBGROUP}/mib_mpls.c \
+			${DIR_MIBGROUP}/mib_ntp.h ${DIR_MIBGROUP}/mib_ntp.c \
+			${DIR_MIBGROUP}/mib_oam.h ${DIR_MIBGROUP}/mib_oam.c \
+			${DIR_MIBGROUP}/mib_qos.h ${DIR_MIBGROUP}/mib_qos.c \
+			${DIR_MIBGROUP}/mib_sla.h ${DIR_MIBGROUP}/mib_sla.c \
+			${DIR_MIBGROUP}/mib_snmp.h ${DIR_MIBGROUP}/mib_snmp.c \
+			${DIR_MIBGROUP}/mib_synce.h ${DIR_MIBGROUP}/mib_synce.c \
+			${DIR_MIBGROUP}/mib_system.h ${DIR_MIBGROUP}/mib_system.c \
+			${DIR_MIBGROUP}/mib_tdm.h ${DIR_MIBGROUP}/mib_tdm.c \
+			${DIR_MIBGROUP}/mib_trunk.h ${DIR_MIBGROUP}/mib_trunk.c \
+			${DIR_MIBGROUP}/mib_vtysh.h ${DIR_MIBGROUP}/mib_vtysh.c \
+			${DIR_MIBGROUP}/mib_vlan.h ${DIR_MIBGROUP}/mib_vlan.c \
+			${DIR_MIBGROUP}/system_mib.h ${DIR_MIBGROUP}/system_mib.c \
+			${DIR_MIBGROUP}/mib_efm.h ${DIR_MIBGROUP}/mib_efm.c \
+			${DIR_MIBGROUP}/mib_efm_agent.h ${DIR_MIBGROUP}/mib_efm_agent.c \
+			${DIR_MIBGROUP}/mib_rmon.h ${DIR_MIBGROUP}/mib_rmon.c \
+			${DIR_MIBGROUP}/mib_stat.h ${DIR_MIBGROUP}/mib_stat.c \
+			${DIR_MIBGROUP}/mib_spliter.h ${DIR_MIBGROUP}/mib_spliter.c \
+			${DIR_MIBGROUP}/mib_h3c_ospf.h ${DIR_MIBGROUP}/mib_h3c_ospf.c \
+			${DIR_MIBGROUP}/mib_route.h ${DIR_MIBGROUP}/mib_route.c \
+			${DIR_MIBGROUP}/mib_stm.h ${DIR_MIBGROUP}/mib_stm.c  \
+			${DIR_MIBGROUP}/mib_msdhoversnmp.h ${DIR_MIBGROUP}/mib_msdhoversnmp.c \
+			${DIR_MIBGROUP}/mib_vcgif.h ${DIR_MIBGROUP}/mib_vcgif.c "
+			
+	
+for f in ${FILE_LIST}
+do
+    astyle --style=ansi -s4 -k3 -M80 -jSfpHUcnC $f
+done
+
+

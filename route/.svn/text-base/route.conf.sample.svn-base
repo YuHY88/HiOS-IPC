@@ -1,0 +1,10 @@
+! -*- route -*-
+!
+! ROUTE sample configuration file
+!
+! $Id: route.conf.sample,v 1.1 2002/12/13 20:15:30 paul Exp $
+!
+hostname route
+password zebra
+!
+log stdout
